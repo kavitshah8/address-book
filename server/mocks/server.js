@@ -1,7 +1,7 @@
 module.exports = function(app) {
   var express = require('express');
   var serverRouter = express.Router();
-
+  var people = require('../data');
   serverRouter.get('/', function(req, res) {
     res.send({
       'server': []
@@ -33,4 +33,8 @@ module.exports = function(app) {
   });
 
   app.use('/api/server', serverRouter);
+
+  app.get('/people', function(req, res){
+    res.send(people);
+  });
 };
