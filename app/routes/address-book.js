@@ -22,7 +22,7 @@ export default Ember.Route.extend({
 		    return 0;
 		  });
 
-			console.log(peopleArray);
+			console.debug(peopleArray);
 
 			return peopleArray;
 		});

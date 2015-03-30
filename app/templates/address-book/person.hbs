@@ -3,7 +3,38 @@
   <div class="app-person-profile docs-highlight docs-blue" data-intro="Person Profile" data-position="bottom">
     <!-- PERSON PROFILE HEADER -->
     <div class="app-person-profile-header">
-      {{content.firstName}}
+      <h2>{{content.firstName}} {{content.lastName}}</h2>
+      <div class="app-person-profile-department">
+				Strategic Sales
+      </div>
+      <div class="app-person-profile-phone-number">
+          919-555-5555
+      </div>
+      <div class="app-person-profile-phone-number">
+          <a href="mailto:adam.wright@mycompany.com">adam.wright@mycompany.com</a>
+      </div>      
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="education">
+	    <div class="app-section">
+        <div class="app-section-header">
+          <h3>Education</h3>
+        </div>
+	        <div class="app-section-body">
+            <div class="app-history-item">
+              {{#each item in content.education}}
+                <div class="app-history-item-dates">
+	                    {{item.startYear}}-{{item.endYear}}	
+                </div>
+                <div class="app-history-item-body">
+                  <div class="app-history-item-title">{{item.institution}}</div>
+                  {{item.degree}}
+                </div>
+							{{/each}}
+            </div>
+	        </div>
+	    </div>
     </div>
   </div>
 </div>
