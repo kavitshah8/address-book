@@ -3,6 +3,9 @@
   <div class="app-person-profile docs-highlight docs-blue" data-intro="Person Profile" data-position="bottom">
     <!-- PERSON PROFILE HEADER -->
     <div class="app-person-profile-header">
+			<div class="app-person-profile-photo" style="background-image: url(avatar.png)">
+				<img {{bind-attr src=content.image}} />
+			</div>
       <h2>{{content.firstName}} {{content.lastName}}</h2>
       <div class="app-person-profile-department">
 				Strategic Sales

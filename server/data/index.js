@@ -5,7 +5,7 @@ module.exports =
             "id": 1,
             "firstName": "Adam",
             "lastName": "Wright",
-            "image": "dennis.png",
+            "image": "images/dennis.png",
             "education": [
                 {
                     "institution": "NC State University",
@@ -27,7 +27,7 @@ module.exports =
             "id": 2,
             "firstName": "Joe",
             "lastName":  "Manfrey",
-            "image": "linus.png",
+            "image": "images/linus.png",
             "education": [
                 {
                     "institution": "Clemson University",
@@ -49,7 +49,7 @@ module.exports =
             "id": 3,
             "firstName": "Douglas",
             "lastName": "Cho",
-            "image": "douglas.png",
+            "image": "images/douglas.png",
             "education": [
                 {
                     "institution": "University of NC, Chapel Hill",
@@ -71,7 +71,7 @@ module.exports =
             "id": 4,
             "firstName": "Allison",
             "lastName": "Murray",
-            "image": "elon.png",
+            "image": "images/elon.png",
             "education": [
                 {
                     "institution": "University of Southern California",
