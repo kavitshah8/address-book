@@ -8,7 +8,7 @@ export default Ember.Route.extend({
 		return ajax({url:'/people',type:'GET'}).then(function(res){
 			
 			var peopleArray = res.people;
-
+			
 			peopleArray.sort(function(a, b) {
 
 		    if (a.firstName < b.firstName) {
@@ -23,7 +23,7 @@ export default Ember.Route.extend({
 		  });
 
 			console.log(peopleArray);
-			
+
 			return peopleArray;
 		});
 	},

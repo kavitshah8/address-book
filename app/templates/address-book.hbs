@@ -2,7 +2,7 @@
   <!-- LEFT COLUMN -->
   <div class="app-directory-container">
     <!-- DIRECTORY COMPONENT -->
-    <div class="app-directory">
+    <div class="app-directory" {{action 'showRightColumn'}}>
       {{#each item in model}}
         <div class="app-directory-item">
           {{item.firstName}} {{item.lastName}}
@@ -10,5 +10,19 @@
       {{/each}}
     </div>
   </div>
+
+  {{#if rightColumn}}
+    <div class="app-person-profile-container">
+      <!-- PERSON PROFILE COMPONENT -->
+      <div class="app-person-profile docs-highlight docs-blue" data-intro="Person Profile" data-position="bottom">
+        <!-- PERSON PROFILE HEADER -->
+        <div class="app-person-profile-header">
+          {{model}}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
 </div>
+
 {{outlet}}
