@@ -1,7 +1,8 @@
-module.exports = 
+module.exports =
 {
     "people": [
         {
+            "id": 1,
             "firstName": "Adam",
             "lastName": "Wright",
             "image": "dennis.png",
@@ -23,6 +24,7 @@ module.exports =
             ]
         },
         {
+            "id": 2,
             "firstName": "Joe",
             "lastName":  "Manfrey",
             "image": "linus.png",
@@ -44,6 +46,7 @@ module.exports =
             ]
         },
         {
+            "id": 3,
             "firstName": "Douglas",
             "lastName": "Cho",
             "image": "douglas.png",
@@ -65,6 +68,7 @@ module.exports =
             ]
         },
         {
+            "id": 4,
             "firstName": "Allison",
             "lastName": "Murray",
             "image": "elon.png",

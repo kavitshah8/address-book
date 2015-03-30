@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('address-book', function() {
-    this.route('person');
+    this.route('person', {path: ':id'});
   });
 });
 
