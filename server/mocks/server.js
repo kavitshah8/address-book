@@ -38,4 +38,10 @@ module.exports = function(app) {
   app.get('/people', function(req, res){
     res.send(people);
   });
+  
+  app.get('/people/:id', function(req, res){
+    var index = req.params.id;
+    var peopleArray = people.people;
+    res.send(peopleArray[req.params.id-1]);
+  });
 };
