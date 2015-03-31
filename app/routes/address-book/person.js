@@ -6,7 +6,7 @@ export default Ember.Route.extend({
 		var url = '/people/' + parmas.id;
 		// debugger;
 		return ajax({url:url,type:'GET'}).then(function(res){
-			debugger;
+			// debugger;
 			return res;
 		});
 	},
