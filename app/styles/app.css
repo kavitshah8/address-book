@@ -26,7 +26,10 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
+.panel.panel-primary{
+    width: 200px;
+    height: 100%;
+}
 /* the alphabetical list of people */
 .app-directory-container {
     position: absolute;
@@ -35,11 +38,13 @@ html, body {
     top: 0;
     bottom: 0;
     overflow: auto;
-    border-right: 2px solid #666;
 }
 
 .app-directory {
     overflow: auto;
+}
+.btn.btn-default {
+    margin-bottom: 10px;
 }
 
 .app-directory-separator,

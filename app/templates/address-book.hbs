@@ -1,19 +1,20 @@
-<div class="app-address-book">
-  <!-- LEFT COLUMN -->
-  <div class="app-directory-container">
-    <!-- DIRECTORY COMPONENT -->
-    <div class="app-directory" {{action 'showRightColumn'}}>
-      {{#each item in content}}
-        <div class="app-directory-item">
-
-          {{#link-to 'address-book.person' item}}
-            {{item.firstName}} {{item.lastName}}
-          {{/link-to}}
-
-        </div>
-      {{/each}}
+<div class="panel panel-primary">
+  <div class="app-address-book">
+    <!-- LEFT COLUMN -->
+    <div class="app-directory-container">
+      <!-- DIRECTORY COMPONENT -->
+      <div class="app-directory" {{action 'showRightColumn'}}>
+        {{#each item in content}}
+            {{#link-to 'address-book.person' item}}
+              <div class="app-directory-item">
+                {{item.firstName}} {{item.lastName}}
+              </div>
+            {{/link-to}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>
+
 
 {{outlet}}
